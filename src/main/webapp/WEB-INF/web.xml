@@ -46,7 +46,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:/config/spring/spring-config.xml</param-value>
+            <param-value>classpath:/config/spring/springmvc.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
         <async-supported>true</async-supported>
@@ -68,7 +68,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:config/spring/mybatis-config.xml</param-value>
+        <param-value>classpath:config/spring/applicationContext-dao.xml</param-value>
     </context-param>
 
 </web-app>
