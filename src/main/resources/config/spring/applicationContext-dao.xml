@@ -60,7 +60,7 @@
     <!-- 配置SqlSessionFactory -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="configLocation" value="classpath:config/spring/sqlMapConfig.xml"></property>
+        <property name="configLocation" value="classpath:config/mybatis/sqlMapConfig.xml"></property>
         <!-- 自动扫描mapping.xml文件 value的内容就是你的dao层下的sql xml文件 -->
         <!--<property name="mapperLocations" value="classpath:config/mapping/*.xml"></property>-->
         <!--别名包扫描 -->
