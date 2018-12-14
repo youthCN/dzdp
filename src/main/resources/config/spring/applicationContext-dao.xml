@@ -11,12 +11,13 @@
                         http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- 自动扫描  -->
+    <context:component-scan base-package="com.dzdp.mapper"/>
     <context:component-scan base-package="com.dzdp.dao"/>
 
     <!-- 配置 读取properties文件 jdbc.properties -->
     <context:property-placeholder location="classpath:jdbc.properties" />
 
-    <!--&lt;!&ndash; 第一种方式：加载一个properties文件 value的内容就是刚刚2.2步骤新建一个jdbc.properties文件引用，如出现引用不成功请注意路径是否正确。最好新建一个文件夹，相关配置文件放置一个文件夹下 &ndash;&gt;-->
+    <!-- 第一种方式：加载一个properties文件 value的内容就是刚刚2.2步骤新建一个jdbc.properties文件引用，如出现引用不成功请注意路径是否正确。最好新建一个文件夹，相关配置文件放置一个文件夹下 &ndash;&gt;-->
     <!--<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
         <!--<property name="location" value="classpath:jdbc.properties"/>-->
     <!--</bean>-->
